@@ -6,7 +6,10 @@ readme_markdown_from 'lib/Net/Moves.pm';
 readme_pod_from 'lib/Net/Moves.pm';
 githubmeta;
 
-# requires '';
+requires 'Class::Accessor::Fast';
+requires 'Data::Util';
+requires 'Net::OAuth2::Client';
+requires 'JSON';
 
 tests 't/*.t';
 author_tests 'xt';

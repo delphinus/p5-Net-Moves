@@ -4,7 +4,7 @@ Net::Moves - Perl interface for Moves
 
 # VERSION
 
-Version 0.01
+Version 0.11
 
 # SYNOPSIS
 
@@ -25,7 +25,7 @@ This is a Perl interface for [Moves API](https://dev.moves-app.com/docs/overview
 [Net::Moves::V1](http://search.cpan.org/perldoc?Net::Moves::V1) has the implements. Please see her documents.
 
 `sample` directory has a sample web app by [Amon2::Lite](http://search.cpan.org/perldoc?Amon2::Lite). You can try with
-code below.
+code below. (app.psgi depends on [Amon2::Lite](http://search.cpan.org/perldoc?Amon2::Lite), [Date::Manip](http://search.cpan.org/perldoc?Date::Manip).)
 
     $ export MOVES_CLIENT_ID=abcdefg123456
     $ export MOVES_CLIENT_SECRET=654321gfedcba

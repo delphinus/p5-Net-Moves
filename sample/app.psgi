@@ -1,21 +1,16 @@
-use common::sense;
+use strict;
+use warnings;
 use Amon2::Lite;
-use Data::Util qw!:check!;
 use Date::Manip;
+use Data::Util qw!:check!;
 use FindBin;
-#use Log::Minimal;
 use Net::OAuth2::Client;
-use Path::Class;
 
-our $BASE_DIR;
-BEGIN { $BASE_DIR = dir($FindBin::Bin); }
-use lib $BASE_DIR->subdir(qw!extlib lib perl5!)->stringify;
-use lib $BASE_DIR->subdir('lib')->stringify;
-use lib $BASE_DIR->parent->subdir('lib')->stringify;
+use lib "$FindBin::Bin/../lib";
 
 use Net::Moves;
 
-our $VERSION = '0.01';
+our $VERSION = '0.11';
 
 our $MOVES_CALLBACK_PATH = '/auth/moves/callback';
 
@@ -100,6 +95,5 @@ __PACKAGE__->add_trigger(BEFORE_DISPATCH => sub { my $c = shift;
     $c->redirect('/') if $c->req->path_info =~ m!^/moves!
         && ! is_hash_ref $c->session->get('access_token');
 });
-#__PACKAGE__->enable_middleware('Log::Minimal', autodump => 1);
 
 __PACKAGE__->to_app(handle_static => 1);
