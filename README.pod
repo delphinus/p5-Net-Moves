@@ -27,6 +27,8 @@ L<Net::Moves::V1> has the implements. Please see her documents.
 C<sample> directory has a sample web app by L<Amon2::Lite>. You can try with
 code below.
 
+    $ export MOVES_CLIENT_ID=abcdefg123456
+    $ export MOVES_CLIENT_SECRET=654321gfedcba
     $ plackup sample/app.psgi
     # and access http://0:5000/ with PC or iPhone.
 
