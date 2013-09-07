@@ -1,4 +1,13 @@
-use strict;
-use Test::More tests => 1;
+use common::sense;
+use Test::More;
 
-BEGIN { use_ok 'Net::Moves' }
+BEGIN {
+    my @modules = qw!
+        Net::Moves
+        Net::Moves::V1
+    !;
+    plan tests => scalar @modules;
+    use_ok $_ for @modules;
+}
+
+diag( "Testing Net::Moves $Net::Moves::VERSION, Perl $], $^X" );

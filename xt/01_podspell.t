@@ -8,3 +8,15 @@ __DATA__
 JINNOUCHI Yasushi
 delphinus {at} remora.cx
 Net::Moves
+
+API
+AnnoCPAN
+CPAN
+MERCHANTABILITY
+URI
+desides
+licensable
+thie
+tradename
+uri
+url
