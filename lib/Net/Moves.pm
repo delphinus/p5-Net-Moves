@@ -4,7 +4,7 @@ use warnings;
 use Data::Util qw!:check!;
 use Net::Moves::V1;
 
-our $VERSION = '0.01';
+our $VERSION = '0.11';
 
 sub new { my $class = shift; #{{{
     my $args = is_hash_ref($_[0]) ? $_[0] : +{@_};
@@ -20,7 +20,7 @@ Net::Moves - Perl interface for Moves
 
 =head1 VERSION
 
-Version 0.01
+Version 0.11
 
 =head1 SYNOPSIS
 
@@ -41,7 +41,7 @@ This is a Perl interface for L<Moves API|https://dev.moves-app.com/docs/overview
 L<Net::Moves::V1> has the implements. Please see her documents.
 
 C<sample> directory has a sample web app by L<Amon2::Lite>. You can try with
-code below.
+code below. (app.psgi depends on L<Amon2::Lite>, L<Date::Manip>.)
 
     $ export MOVES_CLIENT_ID=abcdefg123456
     $ export MOVES_CLIENT_SECRET=654321gfedcba

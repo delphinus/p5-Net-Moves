@@ -2,7 +2,7 @@ NAME
     Net::Moves - Perl interface for Moves
 
 VERSION
-    Version 0.01
+    Version 0.11
 
 SYNOPSIS
         use Net::Moves;
@@ -22,7 +22,7 @@ DESCRIPTION
     Net::Moves::V1 has the implements. Please see her documents.
 
     "sample" directory has a sample web app by Amon2::Lite. You can try with
-    code below.
+    code below. (app.psgi depends on Amon2::Lite, Date::Manip.)
 
         $ export MOVES_CLIENT_ID=abcdefg123456
         $ export MOVES_CLIENT_SECRET=654321gfedcba

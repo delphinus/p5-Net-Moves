@@ -32,7 +32,12 @@
          }
       },
       "runtime" : {
-         "requires" : {}
+         "requires" : {
+            "Class::Accessor::Fast" : "0",
+            "Data::Util" : "0",
+            "JSON" : "0",
+            "Net::OAuth2::Client" : "0"
+         }
       }
    },
    "release_status" : "stable",

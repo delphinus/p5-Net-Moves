@@ -18,7 +18,11 @@ no_index:
     - inc
     - t
     - xt
-requires: {}
+requires:
+  Class::Accessor::Fast: 0
+  Data::Util: 0
+  JSON: 0
+  Net::OAuth2::Client: 0
 resources:
   license: http://opensource.org/licenses/artistic-license.php
 version: 0.01
